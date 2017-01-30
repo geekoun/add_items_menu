@@ -32,7 +32,7 @@ $args = array(
     'ID' => #ID_CATEGORY,
     'type' => 'taxonomy',
     'object' => 'category',
-    'menu_order' => 1
+    'menu_order' => 3
   ),
  );
  
