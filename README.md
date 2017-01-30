@@ -37,7 +37,7 @@ $args = array(
  );
  
  $location = array(
-  'bool' => true, //choice false is no add location
+  'bool' => true, //true for modify location
   'slug' => 'header-menu' //if new location menu add slug else nothing ''
 );
 
