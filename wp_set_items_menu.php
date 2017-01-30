@@ -1,3 +1,4 @@
+<?php
 /**
  * Create Menu/Items in WORDPRESS
  *
@@ -91,3 +92,4 @@ function wp_set_items_menu($name, $args = array(), $location = array()) {
 			return new WP_Error( 'invalid_update_option', __( 'The option "theme_mods_treehouse" is not update.' ) );
 	}
 }
+?>
