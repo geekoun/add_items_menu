@@ -5,7 +5,7 @@
  * This function can create a menu and add items
  *
  * @since 1.0.0
- * @author Morgan JOURDIN <mj.technologie@gmail.com>
+ * @author Morgan JOURDIN <devwpfr@gmail.com>
  *
  * @param string $name (optional)
  * @param array $args (required)
