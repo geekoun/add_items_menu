@@ -85,7 +85,7 @@ function add_items_menu($name, $args = array(), $location = array()) {
 
     $results = isset( $result[0] ) ? (int) $results[0]->count + 1 : 1;
 
-    $update = $wpdb->update( $wpdb->term_taxonomy, array( 'count' => $results ), array( 'term_id' => $new_menu_ID ), array( '%d' ), array( '%d' ) );
+    $update = $wpdb->update( $wpdb->term_taxonomy, array( 'count' => $results ), array( 'term_id' => (int)$new_menu_ID ), array( '%d' ), array( '%d' ) );
     if( !$update ) {
       return new WP_Error( 'invalid_update_taxonomyterm', __( 'The counter is not update.', 'item-menu' ) );
     }
@@ -98,7 +98,7 @@ function add_items_menu($name, $args = array(), $location = array()) {
 
     $old_value = isset( $mods[ $name ] ) ? $mods[ $name ] : false;
 
-    $mods[ $name ] = apply_filters( 'pre_set_theme_mod_{$name}', $value, $old_value );
+    $mods[ $name ] = apply_filters( 'pre_set_theme_mod_{$name}', (int)$value, (int)$old_value );
 
     $theme = get_option( 'stylesheet' );
     $update = update_option( 'theme_mods_$theme', $mods );
