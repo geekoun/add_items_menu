@@ -41,7 +41,7 @@ $args = array(
   'slug' => 'header-menu' //if new location menu add slug else nothing ''
 );
 
-wp_set_items_menu($name, $args, $location);
+add_items_menu($name, $args, $location);
 ```
 ## Works
 
